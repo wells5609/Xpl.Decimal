@@ -12,8 +12,8 @@
 	"keywords": ["decimal", "ds", "extension", "arbitrary precision", "math", "numbers", "vector"],
 	"require": {
 		"php": ">=7.3.2",
-		"ext-decimal": ">=1.0",
-		"ext-ds": ">=1.0",
+		"php-decimal/php-decimal": "~1.0",
+		"php-ds/extension": ">=1.0",
 		"wells5609/datetime": "~1.0"
 	},
 	"autoload": {
