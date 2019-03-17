@@ -12,38 +12,6 @@ use Xpl\Decimal\Exception\{
 	UnexpectedValueException
 };
 
-class Symbol
-{
-	const SUPERSCRIPT_ONE		= '¹';
-	const SUPERSCRIPT_TWO		= '²';
-	const SQUARED				= self::SUPERSCRIPT_TWO;
-	const SUPERSCRIPT_THREE		= '³';
-	const CUBED					= self::SUPERSCRIPT_THREE;
-	const FRACTION_QUARTER		= '¼';
-	const FRACTION_HALF			= '½';
-	const FRACTION_THREE_QUARTERS = '¾';
-	const MULTIPLICATION		= '×';
-	const DIVISION				= '÷';
-	const PLUS_MINUS			= '±';
-	const NOT_EQUAL				= '≠';
-	const EQUIVALENT 			= '≈';
-	const SUM					= '∑';
-	const ROOT					= '√';
-	const PI					= 'π';
-	const PARTIAL				= '∂';
-	const INTEGRAL				= '∫';
-	const MU					= 'µ';
-	const BETA					= 'ß';
-	const DELTA					= '∆';
-	const FLORIN				= 'ƒ';
-	const FUNCTION				= self::FLORIN;
-	const DEGREE				= 'º';
-	const NOT					= '¬';
-	const INFINITY				= '∞';
-	const NULL					= 'Ø';
-	const PER_THOUSAND			= '‰';
-}
-
 /**
  * Check that $value is an instance of Decimal and if not, throw an exception.
  * 

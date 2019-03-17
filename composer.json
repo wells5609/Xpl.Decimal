@@ -20,6 +20,9 @@
 	"autoload": {
         "psr-4": {
             "Xpl\\Decimal\\": "src"
-        }
+		},
+		"files": [
+			"bootstrap.php"
+		]
     }
 }

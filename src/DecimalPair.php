@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Xpl\Decimal;
 
 use Decimal\Decimal;
-use Xpl\Traits\PropertyAccessReadable;
 
 /**
  * Represents a pair of Decimals.
@@ -15,8 +14,6 @@ use Xpl\Traits\PropertyAccessReadable;
  */
 class DecimalPair
 {
-
-	use PropertyAccessReadable;
 
 	/**
 	 * Decimal representing the X value
@@ -42,6 +39,28 @@ class DecimalPair
 	{
 		$this->x = $x;
 		$this->y = $y;
+	}
+
+	/**
+	 * Magic get for read-only property access
+	 *
+	 * @param string $key
+	 */
+	public function __get($key)
+	{
+		return $this->$key;
+	}
+
+	/**
+	 * Magic isset for read-only property access
+	 *
+	 * @param string $key
+	 *
+	 * @return bool
+	 */
+	public function __isset($key)
+	{
+		return isset($this->$key);
 	}
 
 	/**
