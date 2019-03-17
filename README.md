@@ -19,24 +19,68 @@ A strict implementation of `Ds\Sequence` that restricts values to `Decimal\Decim
 
 Has additional methods for doing common math operations - most are self-explanatory:
 
-- `min(): Decimal`
-- `max(): Decimal`
-- `sum(): Decimal`
-- `mean(): Decimal`
-- `prod(): Decimal`
-- `delta(): Vector` Returns a vector of the difference between each value (i.e. `$this[i] - $this[i-1]`).
-- `rdelta(): Vector` Returns a vector of the difference between each value as a percent (i.e. `($this[i] - $this[i-1]) / $this[i-1]`)
-- `diff(Vector $y): Vector` Returns a vector of the difference between each value in `$this` and `$y` (i.e. `$this[i] - $y[i]`)
-- `centralMoment(int $k, bool $sample = true): Decimal` Central moment of the power `$k`
-- `skewness(): Decimal`
-- `regressionSumOfSquares($ybar): Decimal`
-- `residualSumOfSquares(Vector $y): Decimal`
-- `totalSumOfSquares(Vector $y): Decimal`
-- `var(): Decimal` Variance
-- `covar(): Decimal` Covariance
-- `stdev(): Decimal` Standard deviation
-- `coefficientOfVariation(): Decimal` Coefficient of variation (aka relative standard deviation)
-- `indexOfDispersion(): Decimal` Index of dispersion (aka relative variance)
-- `correl(Vector $y): Decimal` Pearson's correlation coefficient (aka Pearson-product-moment correlation coefficient, "Pearson's r")
-- `varp(): Decimal` Variance, treating the sequence as a population
-- `stdevp(): Decimal` Standard deviation, treating the sequence as a population
+__`min(): Decimal`__
+
+__`max(): Decimal`__
+
+__`sum(): Decimal`__
+
+__`mean(): Decimal`__
+
+__`prod(): Decimal`__
+
+__`delta(): Vector`__ 
+
+Returns a vector containing the difference between each value (i.e. `$this[i] - $this[i-1]`).
+
+__`rdelta(): Vector`__
+
+Returns a vector containing the difference between each value as a percent (i.e. `($this[i] - $this[i-1]) / $this[i-1]`)
+
+__`diff(Vector $y): Vector`__
+
+Returns a vector containing the difference between each value in `$this` and `$y` (i.e. `$this[i] - $y[i]`)
+
+__`var(): Decimal`__ 
+
+Variance
+
+__`covar(): Decimal`__ 
+
+Covariance
+
+__`stdev(): Decimal`__
+
+Standard deviation
+
+__`coefficientOfVariation(): Decimal`__
+
+Coefficient of variation (aka relative standard deviation)
+
+__`indexOfDispersion(): Decimal`__
+
+Index of dispersion (aka relative variance)
+
+__`correl(Vector $y): Decimal`__
+
+Pearson's correlation coefficient (aka Pearson-product-moment correlation coefficient, "Pearson's r")
+
+__`varp(): Decimal`__ 
+
+Variance, treating the data as a population
+
+__`stdevp(): Decimal`__
+
+Standard deviation, treating the data as a population
+
+__`centralMoment(int $k, bool $sample = true): Decimal`__
+
+Central moment of the power `$k`
+
+__`skewness(): Decimal`__
+
+__`regressionSumOfSquares($ybar): Decimal`__
+
+__`residualSumOfSquares(Vector $y): Decimal`__
+
+__`totalSumOfSquares(Vector $y): Decimal`__
