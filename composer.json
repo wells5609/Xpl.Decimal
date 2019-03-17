@@ -1,5 +1,5 @@
 {
-    "name": "wells5609/decimal",
+	"name": "wells5609/decimal",
 	"description": "Library built atop the Decimal and Datastructures PHP extensions",
     "type": "library",
     "license": "MIT",
@@ -10,13 +10,13 @@
 		}
 	],
 	"keywords": ["decimal", "ds", "extension", "arbitrary precision", "math", "numbers", "vector"],
-    "require": {
+	"require": {
 		"php": ">=7.3.2",
 		"ext-decimal": ">=1.0",
 		"ext-ds": ">=1.0",
 		"wells5609/datetime": "~1.0"
-    },
-    "autoload": {
+	},
+	"autoload": {
         "psr-4": {
             "Xpl\\Decimal\\": "src"
         }
