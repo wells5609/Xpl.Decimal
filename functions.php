@@ -184,7 +184,7 @@ function range(int $min, int $max, int $step = 1): array
 /**
  * Returns the maximum number among the given arguments.
  * 
- * If only 1 argument is provided and it is an array of Traversable object,
+ * If only 1 argument is provided and it is an array or Traversable object,
  * its elements will be used as the numbers, which is the same behavior as the 
  * standard PHP function max().
  * 
@@ -225,7 +225,7 @@ function max($value1, ...$values): Decimal
 /**
  * Returns the minimum number among the given arguments.
  * 
- * If only 1 argument is provided and it is an array of Traversable object,
+ * If only 1 argument is provided and it is an array or Traversable object,
  * its elements will be used as the numbers, which is the same behavior as the 
  * standard PHP function min().
  * 
@@ -266,7 +266,7 @@ function min($value1, ...$values): Decimal
 /**
  * Returns the sum of all values.
  * 
- * If only 1 argument is provided and it is an array of Traversable object,
+ * If only 1 argument is provided and it is an array or Traversable object,
  * its elements will be used as the numbers.
  * 
  * Note: This function works with any number, including Decimal instances, 
@@ -298,6 +298,9 @@ function sum($value1, ...$values): Decimal
 /**
  * Returns the average (arithmetic mean) of all values.
  *
+ * If only 1 argument is provided and it is an array or Traversable object,
+ * its elements will be used as the numbers.
+ * 
  * Note: This function works with any number, including Decimal instances, 
  * integers, floats, and numeric strings.
  *
@@ -328,6 +331,9 @@ function mean($value1, ...$values): Decimal
 
 /**
  * Returns the product of all values in the sequence.
+ * 
+ * If only 1 argument is provided and it is an array or Traversable object,
+ * its elements will be used as the numbers.
  * 
  * If only one number is present, returns a Decimal with value '1'. This 
  * behavior is consistent with that of `array_product()`
